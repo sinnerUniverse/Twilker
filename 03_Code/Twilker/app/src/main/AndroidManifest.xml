@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="sys.vid.com.twilker" >
+    package="sys.vid.com.twilker"
+    android:versionCode="1"
+    android:versionName="0.0.001">
 
     <application
         android:allowBackup="true"
@@ -20,7 +22,19 @@
         <activity
             android:name=".MainTwilker"
             android:label="Twilker"
+            android:configChanges="orientation|keyboard|screenSize"
+            android:screenOrientation="sensor"
             android:parentActivityName=".Splash" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainTwilker" />
+        </activity>
+        <activity
+            android:name=".About"
+            android:label="Twilker"
+            android:configChanges="orientation|keyboard|screenSize"
+            android:screenOrientation="sensor"
+            android:parentActivityName=".MainTwilker" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainTwilker" />
