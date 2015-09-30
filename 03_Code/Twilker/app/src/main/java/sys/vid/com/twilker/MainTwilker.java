@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import sys.vid.com.twilker.utils.ThemeUtils;
+
 /**
  * Created by sinner_universe on 22/09/2015.
  */
@@ -16,6 +18,7 @@ public class MainTwilker extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ThemeUtils.onActivityCreateSetTheme(this);
         setContentView(R.layout.activity_main_twilker);
     }
 
@@ -32,6 +35,14 @@ public class MainTwilker extends ActionBarActivity {
             case android.R.id.home:
                 backButtonHandler();
                 return true;
+            case R.id.action_settings:
+                try {
+                    Intent intent = new Intent(this, Settings.class);
+                    startActivity(intent);
+                } catch(Exception ex) {
+                    ex.printStackTrace();
+                }
+                return true;
             case R.id.menu_about:
                 try {
                     Intent intent = new Intent(this, About.class);
@@ -39,6 +50,7 @@ public class MainTwilker extends ActionBarActivity {
                 } catch(Exception ex) {
                     ex.printStackTrace();
                 }
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -48,7 +60,6 @@ public class MainTwilker extends ActionBarActivity {
     public void onBackPressed() {
         //Display alert message when back button has been pressed
         backButtonHandler();
-        return;
     }
 
     public void backButtonHandler() {

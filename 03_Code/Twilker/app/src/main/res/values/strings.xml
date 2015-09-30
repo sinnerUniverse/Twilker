@@ -8,4 +8,12 @@
     <string name="yes">Si</string>
     <string name="no">No</string>
     <string name="app_version">Versión </string>
+    <string name="title_activity_settings">Configuración</string>
+    <string name="title_activity_themes">Temas</string>
+    <string name="black" translatable="false">Black</string>
+    <string name="blue" translatable="false">Blue</string>
+    <string name="pick">Elige un tema</string>
+    <string name="agree">Estoy de acuerdo con los terminos y condiciones</string>
+    <string name="natural" translatable="false">Natural</string>
+    <string name="pink">Rosa</string>
 </resources>

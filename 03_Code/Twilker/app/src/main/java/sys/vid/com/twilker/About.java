@@ -1,12 +1,13 @@
 package sys.vid.com.twilker;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
+
+import sys.vid.com.twilker.utils.ThemeUtils;
 
 /**
  * Created by sinner_universe on 22/09/2015.
@@ -16,6 +17,7 @@ public class About extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ThemeUtils.onActivityCreateSetTheme(this);
         setContentView(R.layout.about);
         displayVersionName();
     }
@@ -34,7 +36,6 @@ public class About extends Activity{
     @Override
     public void onBackPressed() {
         finish();
-        return;
     }
 
     private void displayVersionName() {
