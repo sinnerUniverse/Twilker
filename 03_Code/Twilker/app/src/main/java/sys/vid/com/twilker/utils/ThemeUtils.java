@@ -15,6 +15,10 @@ public class ThemeUtils {
     public final static int BLUE = 2;
     public final static int PINK = 3;
 
+    public static void changeToTheme(int theme) {
+        cTheme = theme;
+    }
+
     public static void changeToTheme(Activity activity, int theme) {
         cTheme = theme;
         activity.finish();

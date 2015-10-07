@@ -7,47 +7,12 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="sys.vid.com.twilker.Themes">
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="14dp"
-        android:text="@string/pick"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <Button
-        android:id="@+id/naturalbutton"
+    <Spinner
+        android:id="@+id/static_spinner"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
-        android:text="@string/natural" />
-
-    <Button
-        android:id="@+id/blackbutton"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/naturalbutton"
-        android:layout_below="@+id/naturalbutton"
-        android:text="@string/black" />
-
-    <Button
-        android:id="@+id/bluebutton"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/blackbutton"
-        android:layout_below="@+id/blackbutton"
-        android:text="@string/blue" />
-
-    <Button
-        android:id="@+id/pinkbutton"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/bluebutton"
-        android:layout_below="@+id/bluebutton"
-        android:text="@string/pink" />
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp" />
 
 
 </RelativeLayout>
