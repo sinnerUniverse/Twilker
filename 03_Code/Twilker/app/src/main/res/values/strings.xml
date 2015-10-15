@@ -13,6 +13,11 @@
     <string name="pick">Elige un tema</string>
     <string name="agree">Estoy de acuerdo con los terminos y condiciones</string>
     <string name="apply_theme">Para aplicar el tema la aplicación debe reiniciarse, ¿desea hacerlo ahora?</string>
+    <string name="hello">Hola, </string>
+    <string name="login_instructions">Iniciar sesión en Twitter</string>
+    <string name="share_instructions">Comparte un mensaje</string>
+    <string name="btn_login">Log in</string>
+    <string name="btn_share">Compartir</string>
     <string-array name="themes_array">
         <item>Seleccione un tema</item>
         <item>Natural</item>
@@ -20,4 +25,12 @@
         <item>Blue</item>
         <item>Pink</item>
     </string-array>
+
+    <!-- Twitter Configurations -->
+    <string name="twitter_callback">http://alumnos.azurewebsites.net</string>
+    <string name="twitter_consumer_key">g41QDTkcy3fxYkZqEYmRJA</string>
+    <string name="twitter_consumer_secret">8rEjv42vt31K7KLG9L5vV7gf16VdCvB5ST6Kzh6GJY</string>
+    <string name="twitter_oauth_verifier">oauth_verifier</string>
+    <string name="title_activity_activity_webview">Twitter</string>
+    <!-- End Configurations -->
 </resources>

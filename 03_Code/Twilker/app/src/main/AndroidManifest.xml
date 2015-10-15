@@ -4,6 +4,9 @@
     android:versionCode="1"
     android:versionName="0.0.001" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -29,6 +32,17 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainTwilker" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="t4jsample"
+                    android:scheme="oauth" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".About"
@@ -55,6 +69,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="sys.vid.com.twilker.Settings" />
+        </activity>
+        <activity
+            android:name=".activity_webview"
+            android:label="@string/title_activity_activity_webview"
+            android:parentActivityName=".MainTwilker" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sys.vid.com.twilker.MainTwilker" />
         </activity>
     </application>
 

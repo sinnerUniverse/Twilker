@@ -15,4 +15,9 @@
     <string name="title_activity_themes">Themes</string>
     <string name="pink">Pink</string>
     <string name="apply_theme">To apply new theme the app must restart, do you want to do now?</string>
+    <string name="hello">Hello, </string>
+    <string name="login_instructions">Login into Twitter</string>
+    <string name="share_instructions">Share a message</string>
+    <string name="btn_login">Log in</string>
+    <string name="btn_share">Share</string>
 </resources>
