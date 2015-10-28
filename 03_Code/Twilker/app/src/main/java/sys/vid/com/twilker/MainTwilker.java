@@ -17,6 +17,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -293,6 +294,8 @@ public class MainTwilker extends Activity implements View.OnClickListener {
 
                 loginLayout.setVisibility(View.GONE);
                 shareLayout.setVisibility(View.VISIBLE);
+                ImageView iv = (ImageView) findViewById(R.id.imageView);
+                iv.setVisibility(View.GONE);
                 userName.setText(MainTwilker.this.getResources().getString(
                         R.string.hello) + username);
 
@@ -352,8 +355,8 @@ public class MainTwilker extends Activity implements View.OnClickListener {
 
                 // Update status
                 StatusUpdate statusUpdate = new StatusUpdate(status);
-                InputStream is = getResources().openRawResource(+ R.drawable.crow_view);
-                statusUpdate.setMedia("test.jpg", is);
+                //InputStream is = getResources().openRawResource(+ R.drawable.crow_view);
+                //statusUpdate.setMedia("test.jpg", is);
 
                 twitter4j.Status response = twitter.updateStatus(statusUpdate);
 
